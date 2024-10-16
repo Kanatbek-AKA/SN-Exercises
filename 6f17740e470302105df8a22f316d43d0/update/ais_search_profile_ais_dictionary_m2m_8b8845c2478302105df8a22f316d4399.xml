@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_1336979_collec_0_collector_search_profile_default_spell_check_dictionary">878845c2478302105df8a22f316d4396</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="collector Search Profile">1988c1c206830210e78117efde3f7653</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-28 18:00:51</sys_created_on>
+        <sys_id>8b8845c2478302105df8a22f316d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1336979_collec_0_collector_search_profile_default_spell_check_dictionary.collector Search Profile</sys_name>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_8b8845c2478302105df8a22f316d4399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-28 18:00:51</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

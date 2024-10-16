@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_notification_uiRoute</name>
+        <page display_value="Collection Tracker Workspace">9d88c1c27a83021095893e1808c6cc53</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-28 18:00:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>5988c1c2fe83021010978b6390aad043</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_notification_uiRoute</sys_name>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>sys_ux_page_property_5988c1c2fe83021010978b6390aad043</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-28 18:00:46</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_1336979_collec_0.9d88c1c27a83021095893e1808c6cc53.root.chrome_notification_uiRoute</unique_name>
+        <value>cb1af195872023002941b53046cb0b4e</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=5988c1c2fe83021010978b6390aad043"/>
+</record_update>

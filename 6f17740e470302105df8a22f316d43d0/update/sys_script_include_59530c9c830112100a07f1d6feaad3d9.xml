@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1336979_collec_0.logPropertyValues</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>false</client_callable>
+        <description>Lab 7.1 server-side logging</description>
+        <name>logPropertyValues</name>
+        <script><![CDATA[function logPropertyValues(str){
+	this.debug = false; // true
+	this.debugPrefix = "sys_admin";
+	if (this.debug ) {
+		gs.info(this.debugPrefix + str);
+	}
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-30 12:37:42</sys_created_on>
+        <sys_id>59530c9c830112100a07f1d6feaad3d9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>logPropertyValues</sys_name>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>sys_script_include_59530c9c830112100a07f1d6feaad3d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-30 12:49:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

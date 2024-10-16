@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Continue Checking Syntax of Scripts</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Lab 1.2 Syntx Checking</name>
+        <order/>
+        <script><![CDATA[// SCript test to check syntax and built-in keywords/functions
+
+var peripherals = ["keyword", "mouse", "printer", "speakers" ]; // built-in or undef vars in array
+var muNym = .5; // decimal / float
+for (var i = 0; i < peripherals.lentgh; ++i) {
+    alert("Current peripheral is: ", peripherals[i]);
+}
+
+if (muNym) {
+    muNym++; // increament
+    alert("myNum: ", muNym);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-07 15:56:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13aaa2b6473302105df8a22f316d4310</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Lab 1.2 Syntx Checking</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>sys_script_client_13aaa2b6473302105df8a22f316d4310</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-07 16:01:07</sys_updated_on>
+        <table/>
+        <type/>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

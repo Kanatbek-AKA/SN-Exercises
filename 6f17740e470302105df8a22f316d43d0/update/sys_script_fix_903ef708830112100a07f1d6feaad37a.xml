@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description>Testing GlideQuery for phone </description>
+        <name>Lab 6.4 GlideQuery Create</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[new GlideQuery("sys_user").insert({
+	user_name:"walt.disney",
+	first_name: 'Walt',
+	last_name: "Disney",
+	department: '23456ljkbvnljbkh35',
+	roles: "admin",
+	email: "walt.disney@example.com",
+	phone: "555-2323",
+	mobile_phone: "815-1901"
+});
+
+// new GlideQuery("sys_user").insert({
+// 	user_name:"mickey.mouse",
+// 	first_name: 'Mickey',
+// 	last_name: "Mouse",
+// 	department: '234598765kjnkbvnljbk678',
+// 	roles: "itil",
+// 	email: "mickey.mouse@example.com",
+// 	phone: "555-1212",
+// 	mobile_phone: "815-1802"
+// });
+
+// new GlideQuery("sys_user").insert({
+// 	user_name:"minnie.mouse",
+// 	first_name: 'Minnie',
+// 	last_name: "Mouse",
+// 	department: '09876765kjazcxvcbvnb1234',
+// 	roles: "itil",
+// 	email: "minnie.mouse@example.com",
+// 	phone: "555-1111",
+// 	mobile_phone: "815-1709"
+// });]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-30 12:20:04</sys_created_on>
+        <sys_id>903ef708830112100a07f1d6feaad37a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Lab 6.4 GlideQuery Create</sys_name>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>sys_script_fix_903ef708830112100a07f1d6feaad37a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-30 12:23:58</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

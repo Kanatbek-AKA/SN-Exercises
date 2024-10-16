@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Github-Backup-SN-work</name>
+        <operation_script><![CDATA[// Custom base64 encoding function
+function base64Encode(str) {
+	var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+	var encoded = '';
+	for (var i = 0; i < str.length; i += 3) {
+		var c1 = str.charCodeAt(i), c2 = str.charCodeAt(i+1), c3 = str.charCodeAt(i+2);
+		encoded += chars.charAt(c1 >> 2);
+		encoded += chars.charAt(((c1 & 3) << 4) | ((c2 & 240) >> 4));
+		encoded += chars.charAt(((c2 & 15) << 2) | ((c3 & 192) >> 6));
+		encoded += chars.charAt(c3 & 63);
+	}
+	if (str.length % 3 === 2) {
+		encoded = encoded.substring(0, encoded.length - 1) + '=';
+	} else if (str.length % 3 === 1) {
+		encoded = encoded.substring(0, encoded.length - 2) + '==';
+	}
+	return encoded;
+}
+
+(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    try {
+        var githubToken = 'YOUR_GITHUB_PERSONAL_ACCESS_TOKEN';
+        var owner = 'Kanatbek-AKA';
+        var repo = 'SN-Exercises';
+        var path = 'test/connection/test.json';
+        var content = JSON.stringify({
+            // Your JSON content here
+            "key": "value",
+            "another_key": "another_value"
+        });
+
+        var restMessage = new sn_ws.RESTMessageV2();
+        restMessage.setEndpoint('https://github.com/' + owner + '/' + repo + '/contents/' + path);
+        restMessage.setHttpMethod('PUT');
+        restMessage.setRequestHeader('Authorization', 'token ' + githubToken);
+        restMessage.setRequestHeader('Accept', 'application/vnd.github.v3+json');
+
+        var encodedContent = base64Encode(content);
+
+        var payload = {
+            "message": "Creating file via ServiceNow",
+            "content": encodedContent
+        };
+
+        restMessage.setRequestBody(JSON.stringify(payload));
+
+        var githubResponse = restMessage.execute();
+        var httpStatus = githubResponse.getStatusCode();
+        var responseBody = githubResponse.getBody();
+
+        // Set the response
+        response.setStatus(httpStatus);
+        response.setBody(responseBody);
+
+    } catch (error) {
+        var errorResponse = {
+            status: "failure",
+            error: {
+                message: error.message || "An unknown error occurred"
+            }
+        };
+        
+        response.setStatus(500);
+        response.setBody(JSON.stringify(errorResponse));
+    }
+})(request, response);
+
+// (function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+//     try {
+//         var oauth = new sn_auth.GlideOAuthClient();
+//         var token = oauth.getToken('SN_Backup');
+        
+//         if (!token) {
+//             throw new Error("Failed to retrieve OAuth token");
+//         }
+
+//         // Use the token to make GitHub API calls
+//         var restMessage = new sn_ws.RESTMessageV2();
+//         restMessage.setEndpoint('https://api.github.com/repos/Kanatbek-AKA/SN-Exercises');
+//         restMessage.setHttpMethod('POST');
+//         restMessage.setRequestHeader("Authorization", "Bearer " + token);
+        
+//         // Add your backup logic here
+//         // ...
+
+//         // Set a JSON response
+//         var responseBody = {
+//             status: "success",
+//             message: "Backup created successfully"
+//         };
+        
+//         response.setStatus(200);
+//         response.setBody(JSON.stringify(responseBody));
+//     } catch (error) {
+//         var errorResponse = {
+//             status: "failure",
+//             error: {
+//                 message: error.message || "An unknown error occurred"
+//             }
+//         };
+        
+//         response.setStatus(500);
+//         response.setBody(JSON.stringify(errorResponse));
+//     }
+// })(request, response);]]></operation_script>
+        <operation_uri>/api/x_1336979_collec_0/github_backup_api/createBackup</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/createBackup</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description>Testing backup </short_description>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 20:47:39</sys_created_on>
+        <sys_id>2f59809f83c912100a07f1d6feaad326</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Github-Backup-SN-work</sys_name>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>sys_ws_operation_2f59809f83c912100a07f1d6feaad326</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 21:31:19</sys_updated_on>
+        <web_service_definition display_value="GitHub Backup API">4b68cc1f83c912100a07f1d6feaad352</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
