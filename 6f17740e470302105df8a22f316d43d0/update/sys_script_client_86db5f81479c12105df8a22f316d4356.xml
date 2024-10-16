@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Confirm Initial P1 details are included if the Incident creator is not a Major Incident Manager</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Lab 2.2 Confirm Major Incident Details</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   if (g_form.getValue('impact') == 1 && g_form.getValue('urgency') == 1 && !g_user.hasRoleExactly('x_1336879_collec_0.major_inc_mgr')){
+		var acckn = confirm("The Priority of Incident is ready submit.{}\n\nPlease, select OK to submit or Cancel to return to the record.", g_user.firstName);
+		if (!acckn) {
+			g_form.addInfoMessage("Incident is not submitted");
+			g_form.addInfoMessage("If base information is unavailable, use the Additional comments field to document.");
+
+			g_form.showFieldMsg("category", 'Major Incident base field');
+			g_form.showFieldMsg("cmdb_ci", "Major Incident base field");
+			g_form.showFieldMsg("assignment_group", "Major Incident base field");
+			g_form.showFieldMsg("short_desciption", "Major Incident base field");
+		}
+
+		return acckn;
+	}  
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 05:49:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>86db5f81479c12105df8a22f316d4356</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Lab 2.2 Confirm Major Incident Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>sys_script_client_86db5f81479c12105df8a22f316d4356</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:06:47</sys_updated_on>
+        <table>incident</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

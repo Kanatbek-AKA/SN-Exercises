@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="syntax_editor_macro">
+    <syntax_editor_macro action="DELETE">
+        <comments>Checking Macro Edit Syntax for JS</comments>
+        <name>Test</name>
+        <sys_class_name>syntax_editor_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 18:58:08</sys_created_on>
+        <sys_id>c9b406ca476302105df8a22f316d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>syntax_editor_macro_c9b406ca476302105df8a22f316d4318</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 18:58:08</sys_updated_on>
+        <text>var gs {&#13;
+console.log.value,&#13;
+console.error.value,&#13;
+console.dir.value,&#13;
+]</text>
+    </syntax_editor_macro>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Collector">6f17740e470302105df8a22f316d43d0</application>
+        <file_path/>
+        <instance_id>a14e774f1b5e7d10699443f4bd4bcbe9</instance_id>
+        <instance_name>dev209301</instance_name>
+        <name>syntax_editor_macro_c9b406ca476302105df8a22f316d4318</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="syntax_editor_macro"><syntax_editor_macro action="INSERT_OR_UPDATE"><comments>Checking Macro Edit Syntax for JS</comments><name>Test</name><sys_class_name>syntax_editor_macro</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-23 18:58:08</sys_created_on><sys_id>c9b406ca476302105df8a22f316d4318</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Test</sys_name><sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package><sys_policy/><sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope><sys_update_name>syntax_editor_macro_c9b406ca476302105df8a22f316d4318</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-23 18:58:08</sys_updated_on><text>var gs {&#13;
+console.log.value,&#13;
+console.error.value,&#13;
+console.dir.value,&#13;
+]</text></syntax_editor_macro></record_update>]]></payload>
+        <payload_hash>1446687252</payload_hash>
+        <record_name>Test</record_name>
+        <reverted_from/>
+        <source>e717740e470302105df8a22f316d43d5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 18:58:08</sys_created_on>
+        <sys_id>6d6506ca476302105df8a22f316d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190e0f543300000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 18:58:08</sys_updated_on>
+        <type>Editor Macro</type>
+        <update_guid>616506ca7663021098134f4ff0063021</update_guid>
+        <update_guid_history>616506ca7663021098134f4ff0063021:1446687252</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Test">ede54a0e476302105df8a22f316d43f6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 19:00:18</sys_created_on>
+        <sys_db_object display_value="" name="syntax_editor_macro">syntax_editor_macro</sys_db_object>
+        <sys_id>609936ad07ca410099c16bd3946e5900</sys_id>
+        <sys_metadata>c9b406ca476302105df8a22f316d4318</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_scope_delete display_value="">95e40e3804724b3b8031b6ee63112bc1</sys_scope_delete>
+        <sys_update_name>syntax_editor_macro_c9b406ca476302105df8a22f316d4318</sys_update_name>
+        <sys_update_version display_value="syntax_editor_macro_c9b406ca476302105df8a22f316d4318">6d6506ca476302105df8a22f316d4321</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 19:00:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

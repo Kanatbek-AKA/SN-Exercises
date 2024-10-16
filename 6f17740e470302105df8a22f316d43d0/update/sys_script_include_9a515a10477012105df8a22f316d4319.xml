@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1336979_collec_0.SlaTargetNotification</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>false</client_callable>
+        <description>Missing JS class "SlaTargetNotification"</description>
+        <name>SlaTargetNotification</name>
+        <script><![CDATA[var SlaTargetNotification = Class.create();
+SlaTargetNotification.prototype = {
+    initialize: function() {
+    },
+
+    type: 'SlaTargetNotification'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-18 12:41:18</sys_created_on>
+        <sys_id>9a515a10477012105df8a22f316d4319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SlaTargetNotification</sys_name>
+        <sys_package display_value="Collector" source="x_1336979_collec_0">6f17740e470302105df8a22f316d43d0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Collector">6f17740e470302105df8a22f316d43d0</sys_scope>
+        <sys_update_name>sys_script_include_9a515a10477012105df8a22f316d4319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-18 12:41:18</sys_updated_on>
+    </sys_script_include>
+</record_update>
