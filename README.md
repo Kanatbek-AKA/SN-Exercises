@@ -1,2 +1,2 @@
 # SN-Exercises
-Backup ServiceNow Den Instance Exercises
+Backup ServiceNow Dev Instance Exercises
